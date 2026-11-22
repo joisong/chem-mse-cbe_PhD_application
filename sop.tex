@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+
+% ----- Packages -----
+\usepackage[
+    left=1in,
+    right=1in,
+    top=0.8in,
+    bottom=0.7in   % adjust this number until it fits
+]{geometry} % ~1 inch margins like the screenshot % ~1 inch margins like the screenshot
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace} % for 1.2 spacing
+\usepackage{fancyhdr} % custom header
+\usepackage{lastpage} % for page numbers if needed later
+\usepackage{ragged2e} % for \justifying
+\usepackage{microtype} % nicer justification
+\usepackage{hyperref}
+% ----- Spacing -----
+\setstretch{1.2}
+
+% ----- Paragraph formatting -----
+% Paragraph formatting adapted from the supplied Overleaf statements.
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% ----- Header style -----
+\pagestyle{fancy}
+\fancyhf{} % clear all header/footer
+
+% Left header: "Statement of Purpose | University"
+\fancyhead[L]{\small\begin{tabular}[t]{@{}l@{}}Statement of Purpose\\Target University\end{tabular}}
+
+% Right header: two lines of text + vertical bar + page number
+% We'll build this manually using a short tabular so we can stack name/degree,
+% then a thin rule, then the page number.
+\fancyhead[R]{%
+    \small
+    \begin{tabular}[t]{@{}r@{}}
+        \textbf{Your Name}\\
+        Program, PhD, Entry Year
+    \end{tabular}%
+    \hspace{0.75em}%
+    \vrule width0.4pt\hspace{0.5em}\thepage
+}
+
+% Remove header line under fancyhdr
+\renewcommand{\headrulewidth}{0pt}
+% Also no footer rule
+\renewcommand{\footrulewidth}{0pt}
+
+% Make header sit a little higher like in the screenshot
+\setlength{\headheight}{28pt}
+\setlength{\headsep}{18pt}
+
+% ----- Document body -----
+\begin{document}
+\justifying
+[Open with the scientific question or research problem motivating your doctoral study. Explain why it matters and how your experience led you to it.]
+
+[Describe your strongest research experience: the question, your individual role, methods, supported findings, and what you learned. Distinguish your contributions from the team's work.]
+
+[Connect a second experience to your research development. Explain a challenge, the decision you made, and how the outcome changed your thinking.]
+
+[State your intended doctoral research direction. Identify a focused question and explain how your preparation equips you to investigate it.]
+
+[Explain fit with this program. Connect specific faculty research and program resources to your proposed direction. Verify current faculty affiliations and availability before naming them.]
+
+[Close with your longer-term research goals and the contribution you hope to make. Follow the actual program prompt and word limit.]
+\end{document}

@@ -1,0 +1,11 @@
+CV source provenance
+
+The supplied Overleaf main.tex credits:
+  Author: Jake Gutierrez
+  Based on: https://github.com/sb2nov/resume
+  License declaration in supplied source: MIT
+
+cv.tex adapts the companion 26fallcv_final.tex layout and retains this
+provenance notice. The upstream license text was not included in the
+Overleaf export and has not been independently verified or reproduced.
+The statement layouts are adapted from the supplied Overleaf projects.
